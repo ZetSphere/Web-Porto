@@ -1,1 +1,2 @@
-console.log("Hello World");
+const myName = "Zamzami Ahmad";
+let myAge = 19;
