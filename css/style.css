@@ -1,4 +1,135 @@
-* {
-  padding: 0;
+.tech-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-width: 420px;
+}
+
+.tech-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 16px;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.tech-item i {
+  font-size: 28px;
+}
+
+.tech-item span {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.tech-item:hover {
+  transform: translateX(8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* ===== TECH STACK ===== */
+.tech-section {
+  background: #f8f9fa;
+}
+
+.tech-row {
+  display: flex;
+  gap: 30px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 14px;
+  background: #ffffff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  transition: 0.3s;
+}
+
+.tech-row:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+}
+
+.tech-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  min-width: 220px;
+}
+
+.tech-left i {
+  font-size: 36px;
+}
+
+.tech-left h5 {
   margin: 0;
+  font-weight: 700;
+}
+
+.tech-right p {
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.progress {
+  height: 8px;
+}
+
+.progress-bar {
+  background: linear-gradient(90deg, #0d6efd, #6e07c1);
+}
+
+/* ===== DARK MODE ===== */
+body.dark {
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+body.dark .tech-section {
+  background: #0f172a;
+}
+
+body.dark .tech-row {
+  background: #111827;
+  color: #e5e7eb;
+}
+
+body.dark .tech-right p {
+  color: #cbd5f5;
+}
+
+/* ===== HERO ===== */
+.hero-section {
+  background: #f8f9fa;
+  transition: 0.3s;
+}
+
+/* ===== NAVBAR ===== */
+.custom-navbar {
+  background: #e9ecef;
+  transition: 0.3s;
+}
+
+/* ===== DARK MODE GLOBAL ===== */
+body.dark {
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+/* HERO DARK */
+body.dark .hero-section {
+  background: #020617;
+}
+
+/* NAVBAR DARK */
+body.dark .custom-navbar {
+  background: #020617;
+}
+
+/* NAVBAR LINK DARK */
+body.dark .navbar .nav-link,
+body.dark .navbar .navbar-brand {
+  color: #e5e7eb !important;
 }
